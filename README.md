@@ -22,8 +22,8 @@ _“함께 즐기세요, 단 몇 시간의 경기일지라도”_
 # 👩🏻‍💻 Developers
 ## Back-end
 - 이예슬 [@2yeseul](https://github.com/2yeseul)
-### 주요 개발 사항
-# 담당 업무
+## 주요 개발 사항
+### 담당 업무
 ```
 Spring Boot, JPA, MySQL 기반의 RESTful API 개발
 

@@ -16,7 +16,7 @@ _“함께 즐기세요, 단 몇 시간의 경기일지라도”_
 | MySQL       |
 | STOMP
 | FCM |
-| AWS EC2, RDS |
+| AWS EC2, RDS, S3 |
 
 
 # 👩🏻‍💻 Developers

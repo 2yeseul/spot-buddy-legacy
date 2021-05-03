@@ -1,7 +1,7 @@
 # ⚾︎ SPOT-BUDDY ⚾︎ 
 _“함께 즐기세요, 단 몇 시간의 경기일지라도”_
 
-![info](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZK6Sz%2Fbtq3UjCM2Qr%2F1kBWCJfo7eLGqLcG7yqL1k%2Fimg.png
+![info](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZK6Sz%2Fbtq3UjCM2Qr%2F1kBWCJfo7eLGqLcG7yqL1k%2Fimg.png)
 
 # 🗓 개발 기간
 2021.01 ~ 2021.05 (~ing)

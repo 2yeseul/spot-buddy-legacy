@@ -1,0 +1,555 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+= 🚗 SPOT API Document V2.0.0
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 6
+
+== 홈
+=== 1. 동행 홈 검색
+include::{snippets}/home-search/http-request.adoc[]
+include::{snippets}/home-search/request-fields.adoc[]
+
+_Response_
+
+include::{snippets}/home-search/response-body.adoc[]
+
+
+== 채팅
+=== 1. 채팅방 id를 통한 사용자들 닉네임 반환
+include::{snippets}/chat-nickname-info/http-request.adoc[]
+include::{snippets}/chat-nickname-info/path-parameters.adoc[]
+*_Response_*
+include::{snippets}/chat-nickname-info/response-body.adoc[]
+include::{snippets}/chat-nickname-info/response-fields.adoc[]
+
+=== 2. 삭제
+include::{snippets}/chat-delete/http-request.adoc[]
+include::{snippets}/chat-delete/path-parameters.adoc[]
+
+
+== 동행
+=== 1. 리스트 - 차단 글 필터링
+```
+(로그인 필수!)
+```
+==== 1-1. 최신순
+include::{snippets}/list-filtered-tour/http-request.adoc[]
+include::{snippets}/list-filtered-tour/path-parameters.adoc[]
+include::{snippets}/list-filtered-tour/response-body.adoc[]
+
+(response fields들은 일반 리스트와 동일합니다!)
+
+==== 1-2. 인기순
+include::{snippets}/list-filtered-popular/http-request.adoc[]
+include::{snippets}/list-filtered-popular/path-parameters.adoc[]
+include::{snippets}/list-filtered-popular/response-body.adoc[]
+
+=== 2. 동행 평가
+==== 2-1. 평가하기
+include::{snippets}/tour-review/http-request.adoc[]
+include::{snippets}/tour-review/request-fields.adoc[]
+==== 2-2. 내 동행평가 전체조회
+include::{snippets}/my-tour-reviews/http-request.adoc[]
+include::{snippets}/my-tour-reviews/response-body.adoc[]
+include::{snippets}/my-tour-reviews/response-fields.adoc[]
+==== 2-3. 다른 사람의 동행평가 전체조회
+include::{snippets}/tour-reviews-detail/http-request.adoc[]
+_Response Fields_
+include::{snippets}/tour-reviews-detail/response-fields.adoc[]
+include::{snippets}/tour-reviews-detail/response-body.adoc[]
+=== 2-4. 동행 평가 가능한 지 여부
+include::{snippets}/tour-review-ok/http-request.adoc[]
+include::{snippets}/tour-review-ok/request-fields.adoc[]
+*_Response Fields_*
+
+include::{snippets}/tour-review-ok/response-body.adoc[]
+include::{snippets}/tour-review-ok/response-fields.adoc[]
+
+
+== 프로필
+=== 1. 내 프로필 조회
+```
+동행 평가 response 부분만 수정 되었습니다.
+```
+include::{snippets}/my-profile/http-request.adoc[]
+include::{snippets}/my-profile/response-body.adoc[]
+include::{snippets}/my-profile/response-fields.adoc[]
+
+=== 2. 남의 프로필 조회
+```
+동행 평가 response 부분만 수정 되었습니다.
+```
+include::{snippets}/your-profile/http-request.adoc[]
+include::{snippets}/your-profile/response-fields.adoc[]
+
+=== 3. 프로필 사진 업로드
+```
+파일(사진) 첨부 때문에 content-type을 form-data 형식으로 지정해주시면 감사하겠습니다!
+```
+include::{snippets}/profile-image-upload/http-request.adoc[]
+include::{snippets}/profile-image-upload/request-parameters.adoc[]
+_Response Body_
+include::{snippets}/profile-image-upload/response-body.adoc[]
+
+=== 4. 현재 사용자의 프로필 사진 조회
+include::{snippets}/profile-image-get/http-request.adoc[]
+_Response Body_
+include::{snippets}/profile-image-get/response-body.adoc[]
+_Response Fields_
+include::{snippets}/profile-image-get/response-fields.adoc[]
+
+=== 5. 다른 사람의 프로필 사진 조회
+include::{snippets}/profile-image-get-other/http-request.adoc[]
+_Request Fields_
+include::{snippets}/profile-image-get-other/request-fields.adoc[]
+_Response Body_
+include::{snippets}/profile-image-get-other/response-body.adoc[]
+_Response Fields_
+include::{snippets}/profile-image-get-other/response-fields.adoc[]
+
+=== 6. 내 차단 목록 조회
+include::{snippets}/block-my-list/http-request.adoc[]
+include::{snippets}/block-my-list/response-body.adoc[]
+include::{snippets}/block-my-list/response-fields.adoc[]
+
+=== 7. 차단 취소 하기
+include::{snippets}/block-cancel/http-request.adoc[]
+include::{snippets}/block-cancel/request-fields.adoc[]
+
+=== 8. 커뮤니티 활동 조회
+==== 8-1. 스크랩 조회
+include::{snippets}/scrap-community-list/http-request.adoc[]
+include::{snippets}/scrap-community-list/response-body.adoc[]
+include::{snippets}/community-popular/response-fields.adoc[]
+
+==== 8-2. 내가 쓴 글 조회
+include::{snippets}/community-my-list/http-request.adoc[]
+include::{snippets}/community-my-list/response-body.adoc[]
+include::{snippets}/community-popular/response-fields.adoc[]
+
+==== 4-3. 내가 쓴 댓글 조회
+include::{snippets}/comment-my-list/http-request.adoc[]
+include::{snippets}/comment-my-list/response-body.adoc[]
+include::{snippets}/comment-my-list/response-fields.adoc[]
+
+=== 9. 비밀번호 재설정
+==== 9-1. 비밀번호 재설정 이메일 전송
+include::{snippets}/password-email/http-request.adoc[]
+include::{snippets}/password-email/request-fields.adoc[]
+include::{snippets}/password-email/response-body.adoc[]
+include::{snippets}/password-email/response-fields.adoc[]
+
+==== 9-2. 인증번호(토큰) 입력 확인
+include::{snippets}/password-check/http-request.adoc[]
+include::{snippets}/password-check/request-fields.adoc[]
+
+_Response_
+include::{snippets}/password-check/response-body.adoc[]
+include::{snippets}/password-check/response-fields.adoc[]
+
+==== 9-3. 비밀번호 재설정
+include::{snippets}/password-reset/http-request.adoc[]
+include::{snippets}/password-reset/request-fields.adoc[]
+
+=== 10. 회원 탈퇴
+include::{snippets}/delete-member/http-request.adoc[]
+include::{snippets}/delete-member/request-fields.adoc[]
+
+=== 11. 회원정보 수정
+```
+변경되지 않는 값들은 기존 값으로 채워 보내주시면 됩니다
+password의 경우 암호화가 적용되어 있어 변경하지 않는 경우여도 사용자가 직접 입력해야될 것 같습니다
+```
+include::{snippets}/modify-info/http-request.adoc[]
+include::{snippets}/modify-info/request-fields.adoc[]
+
+=== 12. 상대방에게 오늘 동행 평가를 했는지 여부
+include::{snippets}/tour-review-ok/http-request.adoc[]
+
+_Request Fields_
+include::{snippets}/tour-review-ok/request-fields.adoc[]
+
+_Response Fields_
+
+include::{snippets}/tour-review-ok/response-body.adoc[]
+include::{snippets}/tour-review-ok/response-fields.adoc[]
+
+== 커뮤니티
+=== 1. 커뮤니티 글 업로드
+```
+파일(사진) 첨부 때문에 content-type을 form-data 형식으로 지정해주시면 감사하겠습니다!
+```
+
+include::{snippets}/community-upload/http-request.adoc[]
+include::{snippets}/community-upload/request-parameters.adoc[]
+
+=== 2. 커뮤니티 글 상세 조회
+include::{snippets}/community-detail/httpie-request.adoc[]
+include::{snippets}/community-detail/path-parameters.adoc[]
+include::{snippets}/community-detail/response-body.adoc[]
+_Response Fields_
+include::{snippets}/community-detail/response-fields.adoc[]
+
+=== 3. 커뮤니티 팀 게시판 조회 (필터링X)
+```
+구단 인덱스는 이전처럼 지정해주시면 될 것 같습니다.
+카테고리는 순서대로 0부터 지정해주시면 됩니다. 카테고리가 전체일 때는 -1로 지정해주시면 됩니다!
+```
+
+include::{snippets}/community-team/http-request.adoc[]
+include::{snippets}/community-team/path-parameters.adoc[]
+include::{snippets}/community-team/response-body.adoc[]
+_Request Fields_
+include::{snippets}/community-team/request-fields.adoc[]
+_Response Fields_
+include::{snippets}/community-popular/response-fields.adoc[]
+
+=== 3-1. 커뮤니티 팀 게시판 조회 (필터링O)
+```
+유저가 로그인 했을 시 적용해주시면 됩니다. response나 request 형식은 이전 api와 동일해요
+```
+
+----
+POST /api/community/team/filter/0 HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 40
+Host: localhost:8080
+
+{
+  "teamIndex" : 8,
+  "category" : -1
+}
+----
+
+
+=== 4. 커뮤니티 인기글 조회 (필터링 X)
+include::{snippets}/community-popular/httpie-request.adoc[]
+include::{snippets}/community-popular/response-body.adoc[]
+include::{snippets}/community-popular/response-fields.adoc[]
+
+=== 4-1. 커뮤니티 인기글 조회 (필터링 O)
+```
+response나 request 형식 이전과 동일합니다
+```
+----
+$ http GET 'http://localhost:8080/api/community/popular/filter/0'
+----
+
+=== 5. 커뮤니티 글 삭제
+include::{snippets}/community-delete/http-request.adoc[]
+include::{snippets}/community-delete/path-parameters.adoc[]
+
+=== 6. 커뮤니티 검색
+```
+커뮤니티 홈에서의 검색 시, teamIndex와 category를 -1로 보내주시면 됩니다.
+```
+
+include::{snippets}/community-search-home/http-request.adoc[]
+_Response Fields_
+include::{snippets}/community-popular/response-fields.adoc[]
+==== 6-1. 홈에서 검색 시
+_Request Fields_
+include::{snippets}/community-search-home/http-request.adoc[]
+_Response Body_
+include::{snippets}/community-search-home/response-body.adoc[]
+
+==== 6-2. 구단 게시판 내에서 검색시
+_Request Fields_
+include::{snippets}/community-search-team/http-request.adoc[]
+_Response Body_
+include::{snippets}/community-search-team/response-body.adoc[]
+
+=== 7. 커뮤니티 글 수정(NEW)
+```
+커뮤니티 수정 시 바뀌지 않는 값들은 기존 값으로 채워 보내주시면 됩니다.
+```
+include::{snippets}/community-modify/http-request.adoc[]
+include::{snippets}/community-modify/path-parameters.adoc[]
+include::{snippets}/community-modify/request-parameters.adoc[]
+
+=== 8. 구단 게시판 회원 수 조회
+include::{snippets}/community-member-number/http-request.adoc[]
+include::{snippets}/community-member-number/path-parameters.adoc[]
+include::{snippets}/community-member-number/response-body.adoc[]
+include::{snippets}/community-member-number/response-fields.adoc[]
+
+=== 9. 커뮤니티 글 신고
+```
+etc 일 땐 violationIndex 0입니다
+```
+include::{snippets}/report-post-violate/http-request.adoc[]
+include::{snippets}/report-post-violate/path-parameters.adoc[]
+_Request Fields_
+include::{snippets}/report-post-violate/request-fields.adoc[]
+
+=== 10. 커뮤니티 글 스크랩
+==== 10-1. 스크랩 하기
+include::{snippets}/scrap-community/http-request.adoc[]
+include::{snippets}/scrap-community/path-parameters.adoc[]
+
+==== 10-2. 스크랩 취소
+include::{snippets}/scrap-community-delete/http-request.adoc[]
+include::{snippets}/scrap-community-delete/path-parameters.adoc[]
+
+==== 10-3. 해당 커뮤니티 글 스크랩 여부
+include::{snippets}/scrap-community-state/http-request.adoc[]
+include::{snippets}/scrap-community-state/path-parameters.adoc[]
+_Response Fields_
+
+include::{snippets}/scrap-community-state/response-body.adoc[]
+include::{snippets}/scrap-community-state/response-fields.adoc[]
+
+=== 11. 숨기기
+==== 11-1. 글 숨기기
+include::{snippets}/hide-post/http-request.adoc[]
+include::{snippets}/hide-post/path-parameters.adoc[]
+
+==== 11-2. 유저가 해당 글을 숨겼는지 여부
+include::{snippets}/hide-status/http-request.adoc[]
+include::{snippets}/hide-status/path-parameters.adoc[]
+
+_Response_
+include::{snippets}/hide-status/response-body.adoc[]
+include::{snippets}/hide-status/response-fields.adoc[]
+
+==== 11-3. 숨기기 취소
+include::{snippets}/hide-cancel/http-request.adoc[]
+include::{snippets}/hide-cancel/path-parameters.adoc[]
+
+=== 12. 비속어 체크
+include::{snippets}/content-check/http-request.adoc[]
+include::{snippets}/content-check/request-fields.adoc[]
+
+_Response_
+
+include::{snippets}/content-check/response-body.adoc[]
+include::{snippets}/content-check/response-fields.adoc[]
+
+== 댓글
+=== 1. 댓글 달기
+```
+답댓글일 시, replyStatus = true로 지정해주시면 됩니다.
+replyId에 답댓글이 달리는 댓글을 넣어 보내주시면 됩니다.
+답댓글이 아닐 시에는 readStatus = false, replyId = -1 로 넣어주시면 됩니다.
+```
+include::{snippets}/comment-upload/http-request.adoc[]
+include::{snippets}/comment-upload/request-fields.adoc[]
+
+=== 2. 댓글 수정 (NEW)
+
+include::{snippets}/comment-modify/http-request.adoc[]
+
+include::{snippets}/comment-modify/request-fields.adoc[]
+
+=== 3. 댓글 삭제
+include::{snippets}/comment-delete/httpie-request.adoc[]
+include::{snippets}/comment-delete/path-parameters.adoc[]
+
+=== 4. 댓글 좋아요
+include::{snippets}/comment-like/httpie-request.adoc[]
+include::{snippets}/comment-like/path-parameters.adoc[]
+
+=== 5. 댓글 좋아요 취소
+include::{snippets}/comment-like-cancel/httpie-request.adoc[]
+include::{snippets}/comment-like-cancel/path-parameters.adoc[]
+
+=== 6. 특정 커뮤니티 글의 댓글 리스트
+```
+익명일 경우 nickname이 표시되지 않습니다
+```
+
+include::{snippets}/comment-list/http-request.adoc[]
+include::{snippets}/comment-list/path-parameters.adoc[]
+include::{snippets}/comment-list/response-fields.adoc[]
+include::{snippets}/comment-list/response-body.adoc[]
+
+=== 7. 특정 커뮤니티 글의 로그인한 사용자가 좋아요 한 댓글 리스트
+include::{snippets}/comment-like-my-list/http-request.adoc[]
+include::{snippets}/comment-like-my-list/path-parameters.adoc[]
+include::{snippets}/comment-like-my-list/response-body.adoc[]
+include::{snippets}/comment-like-my-list/response-fields.adoc[]
+
+=== 8. 댓글 신고
+include::{snippets}/report-comment-violate/http-request.adoc[]
+include::{snippets}/report-comment-violate/path-parameters.adoc[]
+
+== 차단
+
+=== 1. 동행 상세 페이지
+include::{snippets}/block-tour/http-request.adoc[]
+include::{snippets}/block-tour/path-parameters.adoc[]
+
+=== 2. 회원 차단
+include::{snippets}/block-member/http-request.adoc[]
+include::{snippets}/block-member/request-fields.adoc[]
+
+== 동행 확정
+
+=== 1. 동행 확정 취소
+include::{snippets}/cancel-confirm-tour/http-request.adoc[]
+include::{snippets}/cancel-confirm-tour/path-parameters.adoc[]
+
+==== 1-1. 사용자의 동행 확정 취소 목록
+include::{snippets}/cancel-tour-list/http-request.adoc[]
+include::{snippets}/cancel-tour-list/response-body.adoc[]
+include::{snippets}/cancel-tour-list/response-fields.adoc[]
+
+==== 1-2. 사용자가 특정 동행을 삭제했는지 여부
+include::{snippets}/cancel-tour-state/http-request.adoc[]
+include::{snippets}/cancel-tour-state/path-parameters.adoc[]
+include::{snippets}/cancel-tour-state/response-body.adoc[]
+include::{snippets}/cancel-tour-state/response-fields.adoc[]
+
+=== 2. 내 동행 글의 동행 확정 목록 보기
+include::{snippets}/my-tour-confirm-member/http-request.adoc[]
+include::{snippets}/my-tour-confirm-member/path-parameters.adoc[]
+include::{snippets}/my-tour-confirm-member/response-fields.adoc[]
+
+=== 3. 동행 확정 여부 (NEW)
+include::{snippets}/is-confirmed-new/http-request.adoc[]
+include::{snippets}/is-confirmed-new/path-parameters.adoc[]
+
+_Response Fields_
+include::{snippets}/is-confirmed-new/response-body.adoc[]
+include::{snippets}/is-confirmed-new/response-fields.adoc[]
+
+=== 4. 동행 확정 (NEW)
+include::{snippets}/confirm-tour-new/http-request.adoc[]
+include::{snippets}/confirm-tour-new/path-parameters.adoc[]
+
+_Request Fields_
+include::{snippets}/confirm-tour-new/request-fields.adoc[]
+
+=== 5. 채팅방의 모든 사용자가 동행을 확정했는지 여부
+include::{snippets}/chat-all-confirmed/http-request.adoc[]
+include::{snippets}/chat-all-confirmed/path-parameters.adoc[]
+
+_Request Fields_
+
+include::{snippets}/chat-all-confirmed/response-body.adoc[]
+include::{snippets}/chat-all-confirmed/response-fields.adoc[]
+
+== 알람
+
+=== 1. 내 알람 리스트 조회
+```
+✔️ alarmType
+
+    - 1 : 전체 공지
+    - 2 : 동행 확정 알림
+    - 3 : 커뮤니티 내 글에 달린 댓글 알림 및 대댓글 알림
+    - 4 : 커뮤니티 댓글 좋아요 알림
+
+✔️ alarmedObjectId
+
+    - alarmType에 따른 객체의 id
+
+    ex) 2일 때는 alarmedObjectId가 동행 글의 id 입니다. 3, 4 일 때는 커뮤니티 글 id가 됩니다.
+
+```
+include::{snippets}/alarm-list/http-request.adoc[]
+include::{snippets}/alarm-list/response-body.adoc[]
+include::{snippets}/alarm-list/response-fields.adoc[]
+
+=== 2. 알람 읽기 설정
+```
+알람 클릭할 때 호출해주시면 될 것 같습니다
+```
+include::{snippets}/alarm-read/http-request.adoc[]
+include::{snippets}/alarm-read/path-parameters.adoc[]
+
+=== 3. 읽지 않은 알람(채팅+알람)이 있는지 여부
+include::{snippets}/alarm-read-status/http-request.adoc[]
+
+*_Response_*
+include::{snippets}/alarm-read-status/response-body.adoc[]
+include::{snippets}/alarm-read-status/response-fields.adoc[]
+
+=== 4. 알람 삭제
+include::{snippets}/alarm-delete/http-request.adoc[]
+include::{snippets}/alarm-delete/path-parameters.adoc[]
+
+=== 5. 알람 전체 삭제
+include::{snippets}/alarm-all-delete/http-request.adoc[]
+
+=== 6. 채팅 전체 삭제
+include::{snippets}/chat-all-delete/http-request.adoc[]
+
+== 회원가입
+=== 1. 가입 후 인증메일 발송
+----
+POST /api/send-email HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 181
+Host: localhost:8080
+
+// 가입 완료 시, response로 token과 email이 반환됩니다
+
+{
+  "token" : "token",
+  "email" : "email@example.com"
+}
+----
+
+=== 2. 인증메일 재전송
+----
+POST /api/resend-email HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 181
+Host: localhost:8080
+
+// 이 api는 잠시 보류해주세요
+
+{
+  "token" : "token",
+  "email" : "email@example.com"
+}
+----
+
+
+
+== 푸시 알람
+
+=== 1. ios
+include::{snippets}/get-token/http-request.adoc[]
+include::{snippets}/get-token/request-fields.adoc[]
+
+=== 2. push alarm 수신 설정
+include::{snippets}/push-alarm-setting/http-request.adoc[]
+include::{snippets}/push-alarm-setting/request-fields.adoc[]
+
+=== 3. 사용자 push alarm 수신 항목 리스트
+include::{snippets}/push-alarm-my-list/http-request.adoc[]
+include::{snippets}/push-alarm-my-list/response-body.adoc[]
+include::{snippets}/push-alarm-my-list/response-fields.adoc[]
+
+== 버전 확인
+
+=== 1. 버전 저장
+include::{snippets}/version-save/http-request.adoc[]
+include::{snippets}/version-save/request-fields.adoc[]
+
+=== 2. 버전 확인
+include::{snippets}/version-get/http-request.adoc[]
+_Request Field_
+include::{snippets}/version-get/request-fields.adoc[]
+_Response Field_
+include::{snippets}/version-get/response-fields.adoc[]
+include::{snippets}/version-get/response-body.adoc[]
+
+=== 3. 버전 업데이트 저장
+----
+POST /api/version/update HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 181
+Host: localhost:8080
+
+{
+  "token" : "eAUf2IYZC00okE-zX0t37k:APA91bH3iIUfSZNGeWQYg_yQ97JhTOnwbwA9J7B438ApLzNYyM4zVP6pad46mRsRe6FTcksw7b3EN6LpgLkr33FV0WapXrefxWmAMxt0FBCb-jrJLqXIK7lFjNBpIOOxRuUm7zBKAhI9",
+  "version" : "2.1"
+}
+----
+include::{snippets}/version-save/request-fields.adoc[]

@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.http.converters.prefferd-json-mapper",
+      "type": "java.lang.String",
+      "description": "Description for spring.http.converters.prefferd-json-mapper."
+    },
+    {
+      "name": "spring.jpa.http.converters.prefferd-json-mapper",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.http.converters.prefferd-json-mapper."
+    },
+    {
+      "name": "cloud.aws.s3.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.s3.bucket."
+    }
+  ] }

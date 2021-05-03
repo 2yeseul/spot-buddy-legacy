@@ -1,0 +1,199 @@
+{
+  "id": 0,
+  "email": "email0@email.com",
+  "nickname": "email0@email.com",
+  "birth": "20210101",
+  "gender": 1,
+  "teamIndex": 4,
+  "weather": 50,
+  "emailVerified": true,
+  "getReviews": [
+    {
+      "id": 280,
+      "simpleTourReviews": [
+        {
+          "id": 281,
+          "reviewIndex": 1
+        },
+        {
+          "id": 282,
+          "reviewIndex": 2
+        },
+        {
+          "id": 283,
+          "reviewIndex": 3
+        },
+        {
+          "id": 284,
+          "reviewIndex": 4
+        }
+      ],
+      "detailReview": "재밌었어요",
+      "anonymous": true
+    },
+    {
+      "id": 285,
+      "simpleTourReviews": [
+        {
+          "id": 286,
+          "reviewIndex": 1
+        },
+        {
+          "id": 287,
+          "reviewIndex": 2
+        },
+        {
+          "id": 288,
+          "reviewIndex": 3
+        },
+        {
+          "id": 289,
+          "reviewIndex": 4
+        }
+      ],
+      "detailReview": "재밌었어요",
+      "anonymous": true
+    },
+    {
+      "id": 275,
+      "simpleTourReviews": [
+        {
+          "id": 277,
+          "reviewIndex": 2
+        },
+        {
+          "id": 278,
+          "reviewIndex": 3
+        },
+        {
+          "id": 279,
+          "reviewIndex": 4
+        },
+        {
+          "id": 276,
+          "reviewIndex": 1
+        }
+      ],
+      "detailReview": "재밌었어요",
+      "anonymous": false
+    }
+  ],
+  "sendReviews": [],
+  "confirmedTours": [
+    {
+      "id": 203
+    },
+    {
+      "id": 190
+    }
+  ],
+  "tours": [
+    {
+      "id": 137,
+      "tourLocation": "창원",
+      "tourTeam": "NC",
+      "tourStartDate": "0401",
+      "tourEndDate": "0402",
+      "tourTitle": "tourTitle200",
+      "tourContent": "tourContent200",
+      "requiredGender": 1,
+      "tourTheme": "tourTheme200",
+      "minimumAge": 20,
+      "maximumAge": 30,
+      "postsAt": "2021-02-11T17:25:29",
+      "totalNumberOfMember": 4,
+      "nowNumberOfMember": 0,
+      "scraps": [
+        {
+          "id": 152
+        }
+      ],
+      "viewCount": 0,
+      "ended": false
+    },
+    {
+      "id": 188,
+      "tourLocation": "인천",
+      "tourTeam": "SK",
+      "tourStartDate": "0401",
+      "tourEndDate": "0402",
+      "tourTitle": "문학 개막전",
+      "tourContent": "문학 가요",
+      "requiredGender": 1,
+      "tourTheme": "직관",
+      "minimumAge": 20,
+      "maximumAge": 30,
+      "postsAt": "2021-02-16T09:38:48",
+      "totalNumberOfMember": 2,
+      "nowNumberOfMember": 0,
+      "scraps": [
+        {
+          "id": 301
+        }
+      ],
+      "viewCount": 154,
+      "ended": false
+    },
+    {
+      "id": 160,
+      "tourLocation": "창원",
+      "tourTeam": "NC",
+      "tourStartDate": "0401",
+      "tourEndDate": "0402",
+      "tourTitle": "엔팍가자아아~",
+      "tourContent": "창원고고고",
+      "requiredGender": 1,
+      "tourTheme": "응원응원",
+      "minimumAge": 20,
+      "maximumAge": 30,
+      "postsAt": "2021-02-12T00:12:18",
+      "totalNumberOfMember": 4,
+      "nowNumberOfMember": 0,
+      "scraps": [],
+      "viewCount": 0,
+      "ended": false
+    },
+    {
+      "id": 324,
+      "tourLocation": "인천",
+      "tourTeam": "SK",
+      "tourStartDate": "0401",
+      "tourEndDate": "0402",
+      "tourTitle": "ssg 개막전",
+      "tourContent": "문학 가요",
+      "requiredGender": 1,
+      "tourTheme": "직관",
+      "minimumAge": 20,
+      "maximumAge": 30,
+      "postsAt": "2021-03-01T00:41:13",
+      "totalNumberOfMember": 2,
+      "nowNumberOfMember": 0,
+      "scraps": [],
+      "viewCount": 2,
+      "ended": false
+    }
+  ],
+  "scraps": [
+    {
+      "id": 348
+    },
+    {
+      "id": 174
+    },
+    {
+      "id": 175
+    },
+    {
+      "id": 320
+    },
+    {
+      "id": 162
+    },
+    {
+      "id": 338
+    },
+    {
+      "id": 163
+    }
+  ]
+}
